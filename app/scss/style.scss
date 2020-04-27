@@ -1121,6 +1121,9 @@ $blue: #089ee7;
             max-width: none;
             width: 49%;
         }
+        &__agreement{
+            width: 70%;
+        }
     }
     .nav-toggle{
         display: block;
@@ -1130,7 +1133,7 @@ $blue: #089ee7;
     .footer{
         margin-top: 10px;
         &__block{
-           flex-direction: column; 
+           flex-direction: column-reverse; 
         }
         &__logo{
             margin-bottom: 15px;
@@ -1141,6 +1144,9 @@ $blue: #089ee7;
         }
         &__menu{
             margin-bottom: 10px;
+        }
+        &__button{
+            margin-bottom: 15px;
         }
     }
     .school{

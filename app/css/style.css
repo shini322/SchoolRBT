@@ -1630,6 +1630,9 @@ template {
     max-width: none;
     width: 49%;
   }
+  .contacs__agreement {
+    width: 70%;
+  }
   .nav-toggle {
     display: block;
   }
@@ -1640,7 +1643,7 @@ template {
     margin-top: 10px;
   }
   .footer__block {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .footer__logo {
     margin-bottom: 15px;
@@ -1651,6 +1654,9 @@ template {
   }
   .footer__menu {
     margin-bottom: 10px;
+  }
+  .footer__button {
+    margin-bottom: 15px;
   }
   .school {
     padding: 80px 0;
