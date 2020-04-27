@@ -832,7 +832,7 @@ template {
 }
 
 .menu__block ul li a {
-  padding: 6px 33px;
+  padding: 13px 33px;
   font-weight: 500;
   display: inline-block;
   font-size: 18px;
@@ -942,6 +942,7 @@ template {
 
 .school__agreement {
   padding-top: 8px;
+  line-height: 15px;
 }
 
 .school .icon-next {
@@ -1410,7 +1411,7 @@ template {
   height: 49px;
   font-size: 16px;
   font-weight: 700;
-  max-width: 218px;
+  width: 49%;
   margin-top: 13px;
 }
 
@@ -1628,6 +1629,9 @@ template {
   .contacs__input {
     max-width: none;
     width: 49%;
+  }
+  .nav-toggle {
+    display: block;
   }
 }
 

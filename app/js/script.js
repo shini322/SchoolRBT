@@ -6,6 +6,8 @@ $("#employment-phone").mask("+7(999) 999-99-99");
 
 $("#contacs-phone").mask("+7(999) 999-99-99");
 
+$("#school-phone").mask("+7(999) 999-99-99");
+
 $(document).ready(function() {
     $('.town-select').niceSelect();
   });
