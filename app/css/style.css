@@ -1165,7 +1165,7 @@ template {
   align-items: center;
   color: #fff;
   border: 1px dashed transparent;
-  max-height: 94px;
+  height: 94px;
   transition: .3s;
   cursor: pointer;
 }
@@ -1610,6 +1610,9 @@ template {
   }
   .about__text-block {
     margin-left: 0;
+  }
+  .about__steps-item {
+    margin-bottom: 20px;
   }
   .program__container {
     padding: 45px 30px;

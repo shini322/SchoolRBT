@@ -680,7 +680,7 @@ $blue: #089ee7;
        align-items: center;
        color: #fff;
        border: 1px dashed transparent;
-       max-height: 94px;
+       height: 94px;
        transition: .3s;
        cursor: pointer;
        &:hover{
@@ -1096,6 +1096,9 @@ $blue: #089ee7;
     .about{
         &__text-block{
             margin-left: 0;
+        }
+        &__steps-item{
+            margin-bottom: 20px;
         }
     }
     .program{
