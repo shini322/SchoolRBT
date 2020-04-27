@@ -1426,6 +1426,7 @@ body {
   font-weight: 700;
   width: 49%;
   margin-top: 13px;
+  font-family: "Futura PT Book",sans-serif;
 }
 
 .contacs__input::placeholder {
@@ -1447,6 +1448,7 @@ body {
   max-height: 105px;
   padding: 20px;
   margin-bottom: 10px;
+  font-family: "Futura PT Book",sans-serif;
 }
 
 .contacs__textarea::placeholder {
