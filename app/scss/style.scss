@@ -1374,6 +1374,10 @@ body{
     .contacs{
         &__input{
             width: 100%;
+            text-align: center;
+        }
+        &__textarea{
+            text-align: center;
         }
         &__button{
             width: 100%;
@@ -1391,6 +1395,7 @@ body{
         }
         &__subtitle{
             text-align: center;
+            font-size: 14px;
         }
         &__form-text{
             text-align: center;
@@ -1398,6 +1403,11 @@ body{
         &__number{
            justify-content: center;
             max-width: none;
+            margin-top: 5px;
+            font-size: 20px;
+        }
+        &__form{
+            margin-top: 5px;
         }
     }
     .button{
@@ -1422,6 +1432,9 @@ body{
         iframe{
             max-height: 300px;
         }
+    }
+    .footer{
+        padding-top: 15px;
     }
 }
 @media screen and (max-width:400px){

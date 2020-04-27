@@ -1866,6 +1866,10 @@ body {
   }
   .contacs__input {
     width: 100%;
+    text-align: center;
+  }
+  .contacs__textarea {
+    text-align: center;
   }
   .contacs__button {
     width: 100%;
@@ -1883,6 +1887,7 @@ body {
   }
   .contacs__subtitle {
     text-align: center;
+    font-size: 14px;
   }
   .contacs__form-text {
     text-align: center;
@@ -1890,6 +1895,11 @@ body {
   .contacs__number {
     justify-content: center;
     max-width: none;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  .contacs__form {
+    margin-top: 5px;
   }
   .button {
     height: 40px;
@@ -1909,6 +1919,9 @@ body {
   }
   .map iframe {
     max-height: 300px;
+  }
+  .footer {
+    padding-top: 15px;
   }
 }
 
