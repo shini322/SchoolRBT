@@ -246,8 +246,17 @@
 
 $blue: #089ee7;
 
+body{
+    padding-top: 94px;
+}
 
 .header{
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    width: 100%;
     padding: 23px 0 22px;
     &__block{
         display: flex;
@@ -685,6 +694,7 @@ $blue: #089ee7;
        border: 1px dashed transparent;
        height: 94px;
        transition: .3s;
+       margin-bottom: 30px;
        cursor: pointer;
        &:hover{
            background-color: #fff;
@@ -709,14 +719,16 @@ $blue: #089ee7;
    }
 }
 .icon-list{
-    width: 15px;
+    width: 20px;
     height: 20px;
     fill: $blue;
+    flex-shrink: 0;
 }
 .icon-contract{
     width: 19px;
     height: 19px;
     fill: $blue;
+    flex-shrink: 0;
 }
 .program{
     padding: 99px 0 53px;
@@ -966,24 +978,28 @@ $blue: #089ee7;
     display: none;
     position: absolute;
     right: 0;
-    top: 0px;
+    top: 100%;
     background-color: #fff;
-    z-index: 3;
+    z-index: 5;
     padding: 20px;
-    padding-top: 65px;
-    height: 100%;
+    padding-bottom: 30px;
+    width: 100%;
     &__number{
         margin: 10px 0;
+        justify-content: center;
+        display: flex;
+        align-items: center;
     }
     
     &__town{
         margin-bottom: 20px;
+        justify-content: center;
     }
     &__menu-block{
         display: block !important;
         >ul{
             flex-direction: column;
-            align-items: flex-end;
+            align-items: center;
             li{
                 a{
                     text-align: right;
@@ -998,6 +1014,9 @@ $blue: #089ee7;
         padding-bottom: 10px;
         max-width: none;
         width: 100%;
+    }
+    .icon-number{
+        margin-right: 10px;
     }
 }
 .js-overflow{
@@ -1083,6 +1102,7 @@ $blue: #089ee7;
         }
         &__stable{
             text-align: center;
+            padding-top: 10px;
         }
         &__select-town{
             margin: 0 auto 10px;
@@ -1094,6 +1114,15 @@ $blue: #089ee7;
         }
         &__reservation-input{
             margin-bottom: 0;
+        }
+        &__exemplary-text{
+            padding-bottom: 5px;
+        }
+    }
+    .employment{
+        &__form-title{
+            display: block;
+            padding-bottom: 6px;
         }
     }
     .about{
@@ -1128,8 +1157,6 @@ $blue: #089ee7;
     .nav-toggle{
         display: block;
     }
-}
-@media screen and (max-width:768px){
     .footer{
         margin-top: 10px;
         &__block{
@@ -1147,8 +1174,19 @@ $blue: #089ee7;
         }
         &__button{
             margin-bottom: 15px;
+            margin-left: 0;
+        }
+        &__list{
+            flex-direction: column;
+        }
+        &__list-item + &__list-item{
+            padding-left: 0;
+            padding-top: 10px;
         }
     }
+}
+@media screen and (max-width:768px){
+    
     .school{
         padding: 80px 0;
         &__block-dotted{
@@ -1164,6 +1202,22 @@ $blue: #089ee7;
         }
         &__button{
             max-width: none;
+        }
+        &__title{
+            text-align: center;
+        }
+        &__block-dotted{
+            justify-content: center;
+            max-width: none;
+        }
+        &__subtitle{
+            text-align: center;
+        }
+        &__form-title{
+            text-align: center;
+        }
+        &__agreement{
+            text-align: center;
         }
     }
     .earnings{
@@ -1253,6 +1307,7 @@ $blue: #089ee7;
         }
     }
     .program{
+        padding-top: 20px;
         &__price{
            display: block;
            text-align: center;
@@ -1269,15 +1324,22 @@ $blue: #089ee7;
             margin: 0 auto;
             display: block;
         }
+        &__price{
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
     }
     .employment{
+        padding: 50px 0 20px;
         &__subtitle{
             font-size: 18px;
             padding-top: 10px;
         }
         &__number{
-            font-size: 25px;
-            padding: 15px;
+            font-size: 20px;
+            padding: 0;
+            justify-content: center;
+            text-align: center;
         }
         .icon-call{
             width: 20px;
@@ -1294,10 +1356,20 @@ $blue: #089ee7;
             width: 100%;
             max-width: none;
         }
+        &__title{
+            text-align: center;
+        }
+        &__subtitle{
+            text-align: center;
+        }
+        &__form-title{
+            display: block;
+            text-align: center;
+        }
 
     }
     .title{
-        font-size: 25px;
+        font-size: 22px;
     }
     .contacs{
         &__input{
@@ -1314,11 +1386,42 @@ $blue: #089ee7;
             margin-top: 10px;
             width: 100%;
         }
+        &__title{
+            text-align: center;
+        }
+        &__subtitle{
+            text-align: center;
+        }
+        &__form-text{
+            text-align: center;
+        }
+        &__number{
+           justify-content: center;
+            max-width: none;
+        }
     }
     .button{
-        height: 30px;
+        height: 40px;
         padding-top: 5px;
         padding-bottom: 5px;
+    }
+    .about{
+        &__steps-item{
+            padding: 15px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        &__steps-number{
+            font-size: 25px;
+        }
+        &__steps-text{
+            font-size: 12px;
+        }
+    }
+    .map{
+        iframe{
+            max-height: 300px;
+        }
     }
 }
 @media screen and (max-width:400px){

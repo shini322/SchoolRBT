@@ -676,7 +676,17 @@ template {
   font-style: italic;
 }
 
+body {
+  padding-top: 94px;
+}
+
 .header {
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100%;
   padding: 23px 0 22px;
 }
 
@@ -1169,6 +1179,7 @@ template {
   border: 1px dashed transparent;
   height: 94px;
   transition: .3s;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 
@@ -1196,15 +1207,17 @@ template {
 }
 
 .icon-list {
-  width: 15px;
+  width: 20px;
   height: 20px;
   fill: #089ee7;
+  flex-shrink: 0;
 }
 
 .icon-contract {
   width: 19px;
   height: 19px;
   fill: #089ee7;
+  flex-shrink: 0;
 }
 
 .program {
@@ -1497,20 +1510,24 @@ template {
   display: none;
   position: absolute;
   right: 0;
-  top: 0px;
+  top: 100%;
   background-color: #fff;
-  z-index: 3;
+  z-index: 5;
   padding: 20px;
-  padding-top: 65px;
-  height: 100%;
+  padding-bottom: 30px;
+  width: 100%;
 }
 
 .menu-adaptive__number {
   margin: 10px 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .menu-adaptive__town {
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 .menu-adaptive__menu-block {
@@ -1519,7 +1536,7 @@ template {
 
 .menu-adaptive__menu-block > ul {
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .menu-adaptive__menu-block > ul li a {
@@ -1532,6 +1549,10 @@ template {
   padding-bottom: 10px;
   max-width: none;
   width: 100%;
+}
+
+.menu-adaptive .icon-number {
+  margin-right: 10px;
 }
 
 .js-overflow {
@@ -1598,6 +1619,7 @@ template {
   }
   .earnings__stable {
     text-align: center;
+    padding-top: 10px;
   }
   .earnings__select-town {
     margin: 0 auto 10px;
@@ -1609,6 +1631,13 @@ template {
   }
   .earnings__reservation-input {
     margin-bottom: 0;
+  }
+  .earnings__exemplary-text {
+    padding-bottom: 5px;
+  }
+  .employment__form-title {
+    display: block;
+    padding-bottom: 6px;
   }
   .about__text-block {
     margin-left: 0;
@@ -1636,9 +1665,6 @@ template {
   .nav-toggle {
     display: block;
   }
-}
-
-@media screen and (max-width: 768px) {
   .footer {
     margin-top: 10px;
   }
@@ -1657,7 +1683,18 @@ template {
   }
   .footer__button {
     margin-bottom: 15px;
+    margin-left: 0;
   }
+  .footer__list {
+    flex-direction: column;
+  }
+  .footer__list-item + .footer__list-item {
+    padding-left: 0;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .school {
     padding: 80px 0;
   }
@@ -1674,6 +1711,22 @@ template {
   }
   .school__button {
     max-width: none;
+  }
+  .school__title {
+    text-align: center;
+  }
+  .school__block-dotted {
+    justify-content: center;
+    max-width: none;
+  }
+  .school__subtitle {
+    text-align: center;
+  }
+  .school__form-title {
+    text-align: center;
+  }
+  .school__agreement {
+    text-align: center;
   }
   .earnings__reservation-input {
     margin-bottom: 10px;
@@ -1747,6 +1800,9 @@ template {
   .earnings__reservation-agreement {
     line-height: 15px;
   }
+  .program {
+    padding-top: 20px;
+  }
   .program__price {
     display: block;
     text-align: center;
@@ -1763,13 +1819,22 @@ template {
     margin: 0 auto;
     display: block;
   }
+  .program__price {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .employment {
+    padding: 50px 0 20px;
+  }
   .employment__subtitle {
     font-size: 18px;
     padding-top: 10px;
   }
   .employment__number {
-    font-size: 25px;
-    padding: 15px;
+    font-size: 20px;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
   }
   .employment .icon-call {
     width: 20px;
@@ -1786,8 +1851,18 @@ template {
     width: 100%;
     max-width: none;
   }
+  .employment__title {
+    text-align: center;
+  }
+  .employment__subtitle {
+    text-align: center;
+  }
+  .employment__form-title {
+    display: block;
+    text-align: center;
+  }
   .title {
-    font-size: 25px;
+    font-size: 22px;
   }
   .contacs__input {
     width: 100%;
@@ -1803,10 +1878,37 @@ template {
     margin-top: 10px;
     width: 100%;
   }
+  .contacs__title {
+    text-align: center;
+  }
+  .contacs__subtitle {
+    text-align: center;
+  }
+  .contacs__form-text {
+    text-align: center;
+  }
+  .contacs__number {
+    justify-content: center;
+    max-width: none;
+  }
   .button {
-    height: 30px;
+    height: 40px;
     padding-top: 5px;
     padding-bottom: 5px;
+  }
+  .about__steps-item {
+    padding: 15px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .about__steps-number {
+    font-size: 25px;
+  }
+  .about__steps-text {
+    font-size: 12px;
+  }
+  .map iframe {
+    max-height: 300px;
   }
 }
 

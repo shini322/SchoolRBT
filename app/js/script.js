@@ -23,3 +23,12 @@ $(".nav-toggle").click(function() {
 });
 
 
+var num = 94;
+$(window).bind('scroll', function() {
+  if ($(window).scrollTop() > num) {
+    $('.header').addClass('sticky').addClass('sticky'); 
+     
+  } else {
+    $('.header').removeClass('sticky').removeClass('sticky');
+  }
+});
