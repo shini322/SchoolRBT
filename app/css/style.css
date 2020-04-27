@@ -761,6 +761,7 @@ template {
 }
 
 .number {
+  white-space: nowrap;
   margin-right: 19px;
 }
 
@@ -782,7 +783,7 @@ template {
   color: #fff;
   height: 49px;
   padding: 17px 15px 17px 23px;
-  max-width: 210px;
+  width: 210px;
   text-align: left;
   display: flex;
   font-family: 'Futura PT Demi';

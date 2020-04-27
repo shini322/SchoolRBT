@@ -321,10 +321,12 @@ $blue: #089ee7;
     }
 }
 .number{
+    white-space: nowrap;
     margin-right: 19px;
     &__link{
         font-weight: 800;
         font-size: 26px;
+        
     }
     .icon-number{
         width: 18px;
@@ -339,7 +341,7 @@ $blue: #089ee7;
     color: #fff;
     height: 49px;
     padding: 17px 15px 17px 23px;
-    max-width: 210px;
+    width: 210px;
     text-align: left;
     display: flex;
     font-family: 'Futura PT Demi';
@@ -351,6 +353,7 @@ $blue: #089ee7;
     box-shadow: 0px 10px 19px -5px rgba(8,158,231,0.63);
     overflow: hidden;
     position: relative;
+    
     .icon{
         position: absolute;
         right: 23px;
